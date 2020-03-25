@@ -1,0 +1,24 @@
+{
+    "settings": {
+        "react": {
+            "version": "16.9.0"
+        }
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "prettier", "react"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:react/recommended"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+        "@typescript-eslint/indent": [2, 2]
+    },
+    "ignorePatterns": ["node_modules/", "client/node_modules/"],
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    }
+  }
