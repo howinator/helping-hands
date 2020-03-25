@@ -13,6 +13,16 @@
     "ts-node": "^8.8.1",
     "typescript": "^3.8.3"
   },
+  "nodemonConfig": {
+    "watch": ["backend"],
+    "ignore": [
+      ".git",
+      "node_modules"
+    ],
+    "exec": "yarn start",
+    "ext": "ts",
+    "delay": "2500"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
@@ -23,10 +33,12 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",
+    "nodemon": "^2.0.2",
     "prettier": "^2.0.2"
   },
   "scripts": {
-    "start": "npx ts-node index.ts",
+    "start": "POSTGRES_PASSWORD=postgres POSTGRES_USER=helpinghands POSTGRES_DB=helpinghands POSTGRES_PORT=5430 POSTGRES_HOST=localohst npx ts-node index.ts",
+    "start:watch": "nodemon",
     "build": "npx tsc",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
