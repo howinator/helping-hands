@@ -17,7 +17,7 @@
         "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
         "@typescript-eslint/indent": [2, 2]
     },
-    "ignorePatterns": ["node_modules/", "client/node_modules/"],
+    "ignorePatterns": ["node_modules/", "client/node_modules/", "client/build"],
     "parserOptions": {
         "project": "./tsconfig.json"
     }
