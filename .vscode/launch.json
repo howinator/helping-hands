@@ -11,14 +11,14 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/index.js"
+            "program": "${workspaceFolder}/index.ts"
         },
         {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Client",
             "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}"
+            "webRoot": "${workspaceFolder}",
         }
     ]
 }

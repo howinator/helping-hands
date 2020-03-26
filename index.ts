@@ -1,4 +1,4 @@
-import {Server} from "./backend/Server";
+import {Server} from "./backend/server";
 import express from 'express';
 const app = express();
 

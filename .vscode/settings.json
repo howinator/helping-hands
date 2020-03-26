@@ -5,18 +5,21 @@
       },
       "[javascriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": true
       },
       "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": true
       },
       "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": true
       },
-      "editor.codeActionsOnSave": {
-        "source.fixAll": true
-    },
+    //   "editor.codeActionsOnSave": {
+    //     "source.fixAll": true
+    // },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
       "prettier-eslint.eslintIntegration": true,
+      "files.autoSave": "onFocusChange",
+      "editor.tabSize": 2,
 }

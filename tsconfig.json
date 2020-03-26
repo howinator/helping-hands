@@ -7,7 +7,7 @@
       "esnext"
     ],
     "allowJs": true,
-    "skipLibCheck": true,
+    // "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -23,6 +23,7 @@
     "backend/**/*.ts",
     "client/src/**/*.ts",
     "client/src/**/*.tsx",
+    "node_modules/@types/**/*.ts"
   ],
   "exclude": ["node_modules", ]
 }
